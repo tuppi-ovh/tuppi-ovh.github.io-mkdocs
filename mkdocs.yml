@@ -1,0 +1,31 @@
+site_name: ""
+site_url: https://tuppi.ovh
+copyright: 'Copyright &copy; 2020-2021 tuppi-ovh'
+
+markdown_extensions:
+- plantuml_markdown:
+    #server: http://www.plantuml.com/plantuml
+    server: ''
+
+#theme:
+#  name: material
+
+extra:
+  disqus: 'tuppi-ovh'
+
+plugins: ['search']
+
+nav:
+  - Home: index.md
+  - Build a Smart Data Server: 
+     - Part 1. High Level App: '!include ./github/data-server-pi/mkdocs.yml'
+     - Part 2. Hardware & Firmware: '!include ./github/data-server-stm32/mkdocs.yml'
+     - Part 3. ESP8266-based Device: '!include ./github/data-server-vmc/mkdocs.yml'
+  - Electronics Second Life: 
+     - Recycle MP3 Player: doc_mp3_player.md
+  - Miscellaneous:
+     - Compatibility Link 1: doc_lacrosse.md 
+     - Compatibility Link 2: doc_data_server.md
+
+plugins:
+  - monorepo
