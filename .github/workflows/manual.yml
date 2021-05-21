@@ -16,7 +16,7 @@ jobs:
         submodules: 'recursive'
     # requirements
     - name: requirements
-      run: python3 -m pip install -r requirements.txt ; apt-get install -y plantuml
+      run: python3 -m pip install -r requirements.txt ; sudo apt-get install -y plantuml
     # publish script
     - name: publish
       run: bash publish.sh
