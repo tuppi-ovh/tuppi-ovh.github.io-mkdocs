@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# virtual env
-source venv/bin/activate
-
 # prepare sub projects
 git clone https://github.com/tuppi-ovh/data-server-pi.git github/data-server-pi
 git clone https://github.com/tuppi-ovh/data-server-stm32.git github/data-server-stm32
@@ -24,4 +21,3 @@ git push
 # clean up & exit
 rm -rf ../../temp
 rm -rf github/*
-deactivate
