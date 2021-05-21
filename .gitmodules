@@ -1,0 +1,12 @@
+[submodule "ext/data-server-pi"]
+	path = ext/data-server-pi
+	url = https://github.com/tuppi-ovh/data-server-pi.git
+[submodule "ext/data-server-stm32"]
+	path = ext/data-server-stm32
+	url = https://github.com/tuppi-ovh/data-server-stm32.git
+[submodule "ext/data-server-vmc"]
+	path = ext/data-server-vmc
+	url = https://github.com/tuppi-ovh/data-server-vmc.git
+[submodule "ext/tuppi-ovh.github.io"]
+	path = ext/tuppi-ovh.github.io
+	url = https://github.com/tuppi-ovh/tuppi-ovh.github.io.git
