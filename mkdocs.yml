@@ -18,9 +18,9 @@ plugins: ['search']
 nav:
   - Home: index.md
   - Build a Smart Data Server: 
-     - Part 1. High Level App: '!include ./github/data-server-pi/mkdocs.yml'
-     - Part 2. Hardware & Firmware: '!include ./github/data-server-stm32/mkdocs.yml'
-     - Part 3. ESP8266-based Device: '!include ./github/data-server-vmc/mkdocs.yml'
+     - Part 1. High Level App: '!include ./ext/data-server-pi/mkdocs.yml'
+     - Part 2. Hardware & Firmware: '!include ./ext/data-server-stm32/mkdocs.yml'
+     - Part 3. ESP8266-based Device: '!include ./ext/data-server-vmc/mkdocs.yml'
   - Electronics Second Life: 
      - Recycle MP3 Player: doc_mp3_player.md
   - Miscellaneous:

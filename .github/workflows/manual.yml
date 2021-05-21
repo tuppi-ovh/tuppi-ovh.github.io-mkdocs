@@ -17,7 +17,18 @@ jobs:
     # requirements
     - name: requirements
       run: python3 -m pip install -r requirements.txt ; sudo apt-get install -y plantuml
-    # publish script
+    # exec script
+    - name: script
+      run: mkdir output ; python3 -m mkdocs build -d output
+    # publish
     - name: publish
-      run: bash publish.sh
-
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source-directory: 'output'
+        destination-github-username: 'tuppi-ovh'
+        destination-repository-name: 'tuppi-ovh.github.io'
+        user-email: tuppi-ovh@gmail.com
+        commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+        target-branch: master
