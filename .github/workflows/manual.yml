@@ -10,6 +10,7 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: requirements
       run: pwd ; ls ; ls .. ; python3 -m pip install -r ../../requirements.txt 
     - name: publish
