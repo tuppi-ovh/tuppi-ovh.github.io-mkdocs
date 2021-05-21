@@ -1,4 +1,4 @@
-*Last update on 25/04/2020*
+*Last update on 21/05/2021*
 
 ## About
 
@@ -6,7 +6,7 @@ This site presents some personnal DIY projects in two main streams:
 
 - Smart Home
 
-- Recycle Electronics
+- Electronics Second Life
 
 You can navigate between pages on the left of the site.
 
