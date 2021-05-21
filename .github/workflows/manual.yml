@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: requirements
-      run: pwd ; ls ; ls .. ; python3 -m pip install -r ../../requirements.txt 
+      run: python3 -m pip install -r requirements.txt 
     - name: publish
-      run: bash ../../publish.sh
+      run: bash publish.sh
 
