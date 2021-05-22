@@ -20,6 +20,9 @@ jobs:
     # mkdocs
     - name: mkdocs
       run: mkdir output ; python3 -m mkdocs build -d output
+    # cname
+    - name: cname
+      run: echo "tuppi.ovh" > output/CNAME
     # publish
     - name: publish
       uses: cpina/github-action-push-to-another-repository@main
